@@ -1,0 +1,41 @@
+{
+    "config": {
+      "step": {
+        "user": {
+          "title": "连接鲲鹏 5G CPE",
+          "data": {
+            "host": "设备IP地址",
+            "username": "用户名",
+            "password": "密码"
+          }
+        }
+      },
+      "error": {
+        "cannot_connect": "无法连接设备"
+      },
+      "abort": {
+        "already_configured": "该设备已配置"
+      }
+    },
+    "entity": {
+      "sensor": {
+        "device_temp": { "name": "设备温度" },
+        "module_temp": { "name": "5G模组温度" },
+        "wifi_temp": { "name": "WiFi温度" },
+        "cpu_usage": { "name": "CPU使用率" },
+        "memory_usage": { "name": "内存使用率" },
+        "rsrp": { "name": "RSRP参考信号接收功率" },
+        "rsrq": { "name": "RSRQ参考信号接收质量" },
+        "sinr": { "name": "SINR信噪比" },
+        "band": { "name": "当前频段" },
+        "cell_id": { "name": "小区ID" },
+        "mode": { "name": "组网模式" },
+        "isp": { "name": "运营商" },
+        "connected_devices": { "name": "接入终端数" },
+        "uptime": { "name": "运行时长" },
+        "download_speed": { "name": "下行速率" },
+        "upload_speed": { "name": "上行速率" },
+        "firmware_version": { "name": "模组版本" }
+      }
+    }
+  }

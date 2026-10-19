@@ -1,0 +1,12 @@
+{
+    "domain": "kunpeng_cpe",
+    "name": "Kunpeng 5G CPE",
+    "codeowners": ["@lichuanqi"],
+    "config_flow": true,
+    "documentation": "https://github.com/lichuanqi/ha-kunpeng-cpe",
+    "issue_tracker": "https://github.com/yourname/ha-kunpeng-cpe/issues",
+    "iot_class": "local_polling",
+    "version": "0.1.0",
+    "requirements": [],
+    "loggers": ["custom_components.kunpeng_cpe"]
+}
