@@ -3,7 +3,7 @@
 把鲲鹏5G CPE接入Home Assistant，读取蜂窝信号、设备状态、实时速率等数据。
 目前仅在C2000 pro（型号C2000-518）上实测，ha效果如下图所示。
 
-![alt text](image.png)
+![alt text](docs/image.png)
 
 ## 数据清单
 
@@ -85,8 +85,8 @@ ha-kunpeng-cpe/
 
 ```bash
 pip install aiohttp
-cd ../custom_components/scripts/
-python test_kunpeng_api.py \
+cd {project_root}
+python scripts/test_kunpeng_api.py \
     --host 192.168.66.1 \
     --username root \
     --password admin \
