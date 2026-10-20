@@ -1,6 +1,10 @@
 # Kunpeng Cpe for Home Assistant
 
-把鲲鹏5G CPE接入Home Assistant，读取蜂窝信号、设备状态、实时速率等数据。
+![Home Assistant](https://img.shields.io/badge/Home_Assistant-Integration-41BDF5?logo=homeassistant&logoColor=white)
+![Device](https://img.shields.io/badge/Device-Kunpeng_C2000--518-orange)
+![Sensors](https://img.shields.io/badge/Sensors-15-brightgreen)
+
+把鲲鹏5G CPE接入Home Assistant，读取蜂窝信号、设备状态等数据。
 目前仅在C2000 pro（型号C2000-518）上实测，ha效果如下图所示。
 
 ![alt text](docs/image.png)
