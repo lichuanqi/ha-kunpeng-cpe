@@ -1,0 +1,175 @@
+{
+    "result": {
+      "global": {
+        "uptime": 1317058,            // ✅运行时间，单位秒
+        "wifi_temp": 41,              // ✅wifi温度，与设备温度相同后续移除此字段
+        "net_prefer": -1,             
+        "device_temp": 41,            // ✅设备温度
+        "cpu_percent": 1,             // ✅cpu使用率
+        "mem_percent": 63             // ✅内存使用率
+      },
+      "link": [{"speed": 2, "port": 0, "status": 0, "mode": 0}],
+      "terminal_all": {
+        "count": 1,                   // ✅接入终端数
+        "ptype": "rt",
+        "upload": 0,
+        "client": {
+          "AA:BB:CC:DD:EE:FF": {
+            "mac": "AA:BB:CC:DD:EE:FF",
+            "type": "wired",
+            "ipaddr": "192.168.66.100",
+            "mesh_port": false,
+            "expires": -75928,
+            "port": -1,
+            "hostname": "example-host",
+            "position": 0,
+            "exsit": 1,
+            "switch_off": 0,
+            "qos": 1,
+            "assoctime": 7361
+          }
+        },
+        "download": 0,
+        "limit": 0
+      },
+      "lans": [],
+      "cpe": [{
+        "hwid": ":",
+        "earfcn": "156490",
+        "NR5G_AMBR_UL": "100000",
+        "rsrp": "-74",                             // ✅RSRP 参考信号接收功率
+        "V4": {
+          "dns": ["221.179.155.209", "221.179.155.193"],
+          "ipaddrs": ["10.44.63.138"]
+        },
+        "V6": {
+          "ipaddrs": ["2409:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx"],
+          "dns": ["2409:xxxx:2000:0:xxx::1", "2409:xxxx:2000:0:xxx::1"]
+        },
+        "pci": "218",
+        "rsrq": "-2",                              // ✅RSRQ 参考信号接收质量
+        "simmode": "sa_only",
+        "traffic": "1391518315268",
+        "revision": "RG200UCNV3GAR03A07M2G",       // ✅模组版本
+        "NR5G_AMBR_DL": "1000000",
+        "sinr": "8",                               // ✅SINR 信噪比
+        "NR_MIMO": "",
+        "simnumber": "",
+        "name": "wan0",
+        "model": "RG200U-CN",
+        "dl_fcn": "",
+        "imei": "000000000000000",                 // 🔒
+        "switchmode": "1",
+        "rssi": "",
+        "imsi": "460000000000000",                 // 🔒
+        "nrcap": "1",
+        "device_traffic": "1391518315268",         // 🟡 可扩展：累计使用流量
+        "flow_overflow": "",
+        "download": "57751418752",                 // 🟡 可扩展：下行会话累计流量
+        "band_count": 1,
+        "mem_percent": "63",
+        "rscp": "",
+        "ULBW": "",
+        "simcount": "2",
+        "apn": "cmnet",
+        "ul_fcn": "",
+        "mode": "NR SA",                           // ✅组网模式
+        "cpu_percent": "1",
+        "model_temp": "42",                        // ✅5G模组温度
+        "band": "28",                              // ✅当前频段
+        "lac": "",
+        "sim_mon": "66387889314",
+        "sim_flow": "1393682817723",
+        "upload": "8120612778",                    // 🟡 可扩展：上行会话累计流量
+        "iccid": "898600XXXXXXXXXXXXXX",           // 🔒
+        "CQI": "6",
+        "cell": "15681D02B",                       // ✅小区ID
+        "DLBW": "30000",
+        "tac": "200012",
+        "isp": "China Mobile",                     // ✅运营商
+        "control": "/dev/smd1",
+        "simno": "1",
+        "odu": "0",
+        "simtype": "0",
+        "sim_isp": "China Mobile"
+      }],
+      "bat": {"charging": 0, "percent": -1},
+      "terminal": [{
+        "mac": "AA:BB:CC:DD:EE:FF",
+        "type": "wired",
+        "ipaddr": "192.168.66.100",
+        "mesh_port": false,
+        "expires": -75928,
+        "port": -1,
+        "hostname": "example-host",
+        "position": 0,
+        "exsit": 1,
+        "switch_off": 0,
+        "qos": 1,
+        "assoctime": 7361
+      }],
+      "wlan": {
+        "radio5_disabled": 0,
+        "radio2_disabled": 1,
+        "radio": [
+          {
+            "mac": "",
+            "ifname": "wlan0",
+            "ssid": "Example-2.4G",
+            "encryption": "psk-mixed",
+            "assoclist": [],
+            "rxbytes": "0",
+            "hidden": 0,
+            "txbytes": "0",
+            "position": 0,
+            "sta": 0,
+            "key": "********",
+            "channel": "",
+            "device_id": "XXXXXXXXXXXX",
+            "name": "wlan0",
+            "phyname": "aic8800",
+            "frequency": "5.22"
+          },
+          {
+            "mac": "",
+            "ifname": "wlan1",
+            "ssid": "Example-5G",
+            "encryption": "psk-mixed",
+            "assoclist": [],
+            "rxbytes": "0",
+            "hidden": 0,
+            "txbytes": "0",
+            "position": 0,
+            "sta": 0,
+            "key": "********",
+            "channel": "",
+            "device_id": "XXXXXXXXXXXX",
+            "name": "wlan1",
+            "phyname": "swt6652",
+            "frequency": "5.22"
+          }
+        ]
+      },
+      "wans": [{
+        "proto": "wwan",
+        "dns": [
+          "221.179.155.209",
+          "221.179.155.193",
+          "2409:xxxx:2000:0:xxx::1",
+          "2409:xxxx:2000:0:xxx::1"
+        ],
+        "device": "sipa_eth0",
+        "download": "57751448455",
+        "gateway_if": 0,
+        "uptime": 1317029,
+        "ipaddrs": [
+          {"ipaddr": "10.44.63.138", "netmask": "255.255.255.255"},
+          {"ipaddr": "2409:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx:xxxx"}
+        ],
+        "status": 0,
+        "upload": "8120630967",
+        "name": "wan0",
+        "gateway": "::"
+      }]
+    }
+}

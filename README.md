@@ -3,6 +3,7 @@
 ![Home Assistant](https://img.shields.io/badge/Home_Assistant-Integration-41BDF5?logo=homeassistant&logoColor=white)
 ![Device](https://img.shields.io/badge/Device-Kunpeng_C2000--518-orange)
 ![Sensors](https://img.shields.io/badge/Sensors-15-brightgreen)
+[![hacs_badge](https://img.shields.io/badge/HACS-Custom-41BDF5.svg)](https://github.com/hacs/integration)
 
 把鲲鹏5G CPE接入Home Assistant，读取蜂窝信号、设备状态等数据。
 目前仅在C2000 pro（型号C2000-518）上实测，ha效果如下图所示。
@@ -42,7 +43,7 @@
 4. 填写配置（见下节），提交
 
 
-### 方式二：HACS（待完成）
+### 方式二：HACS
 
 1. HACS → **集成** → 右上角三点 → **自定义存储库**
 2. 填入本仓库 URL，类别选 **Integration**
@@ -82,6 +83,27 @@ ha-kunpeng-cpe/
 │       └── test_kunpeng_api.py       # 单独测试api.py
 └── README.md
 ```
+
+## API说明
+
+本项目通过设备的原生HTTP接口读取数据，不依赖厂商App或云服务，目前涉及两个接口。
+
+### 接口1：登录
+
+| 项 | 值 |
+|---|---|
+| URL | `http://<设备IP>/cgi-bin/luci` |
+| Method | `POST` |
+| Request | luci_username=<用户名> & luci_password=<密码> & luci_channel=simple |
+| Response | 响应 `Set-Cookie` 包含 `sysauth=<hash>`，后续请求须携带 |
+
+### 接口2：状态
+
+| 项 | 值 |
+|---|---|
+| URL | `http://<设备IP>/cgi-bin/luci/nradio/status/runtime/wan,cpe_4` |
+| Method | `GET` |
+| Response | JSON，完整响应样例见 [`docs/status_response_sample.jsonc`](docs/status_response_sample.jsonc) |
 
 ## 调试工具
 
