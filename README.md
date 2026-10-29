@@ -29,7 +29,14 @@
 | 12 | 运营商 | `isp` | — | — | `China Mobile` |
 | 13 | 接入终端数 | `connected_devices` | 台 | — | `1` |
 | 14 | 运行时长 | `uptime` | s | `duration` | `1317058` |
-| 15 | 模组版本 | `firmware_version` | — | — | `RG200UCNV3GAR03A07M2G` |
+| 15 | 模组版本 | `firmware_version` | — | — | `RG200***7M2G` |
+| 16 | imei | `imei` | — | — | `868***742` |
+| 17 | imsi | `imsi` | — | — | `460***521` |
+
+以下字段涉及敏感信息，已做如下处理：
+
+- 🔒 `imsi`：**不暴露为实体**
+- 🔒 `imei` / `iccid`：作为诊断实体提供，**默认禁用**，需在实体设置里手动启用
 
 
 ## 安装

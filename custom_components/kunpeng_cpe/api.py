@@ -176,6 +176,8 @@ class KunpengCpeApi:
 
         # ---- 诊断信息 ----
         data["firmware_version"] = cpe.get("revision")
+        data["imei"] = cpe.get("imei")
+        data["iccid"] = cpe.get("iccid")
 
         # ---- 接入终端数（terminal_all.count 是 int）----
         data["connected_devices"] = _to_int(terminal_all.get("count"))

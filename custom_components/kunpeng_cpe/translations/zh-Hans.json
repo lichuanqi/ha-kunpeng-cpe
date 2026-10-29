@@ -34,7 +34,9 @@
         "uptime": { "name": "运行时长" },
         "download_speed": { "name": "下行速率" },
         "upload_speed": { "name": "上行速率" },
-        "firmware_version": { "name": "模组版本" }
+        "firmware_version": { "name": "模组版本" },
+        "imei": { "name": "IMEI" },
+        "iccid": { "name": "ICCID" }
       }
     }
   }

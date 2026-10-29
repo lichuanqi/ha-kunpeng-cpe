@@ -184,6 +184,22 @@ SENSORS: tuple[KunpengCpeSensorEntityDescription, ...] = (
         icon="mdi:information-outline",
         value_fn=lambda data: data.get("firmware_version"),
     ),
+    KunpengCpeSensorEntityDescription(
+        key="imei",
+        translation_key="imei",
+        entity_category=EntityCategory.DIAGNOSTIC,
+        entity_registry_enabled_default=False,
+        icon="mdi:identifier",
+        value_fn=lambda data: data.get("imei"),
+    ),
+    KunpengCpeSensorEntityDescription(
+        key="iccid",
+        translation_key="iccid",
+        entity_category=EntityCategory.DIAGNOSTIC,
+        entity_registry_enabled_default=False,
+        icon="mdi:card-account-details",
+        value_fn=lambda data: data.get("iccid"),
+    ),
 )
 
 
