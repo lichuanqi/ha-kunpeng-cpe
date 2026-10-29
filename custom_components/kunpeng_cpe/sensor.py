@@ -135,24 +135,28 @@ SENSORS: tuple[KunpengCpeSensorEntityDescription, ...] = (
         translation_key="band",
         icon="mdi:radio-tower",
         value_fn=lambda data: data.get("band"),
+        entity_category=EntityCategory.DIAGNOSTIC,
     ),
     KunpengCpeSensorEntityDescription(
         key="cell_id",
         translation_key="cell_id",
         icon="mdi:cellphone-arrow-down",
         value_fn=lambda data: data.get("cell_id"),
+        entity_category=EntityCategory.DIAGNOSTIC,
     ),
     KunpengCpeSensorEntityDescription(
         key="mode",
         translation_key="mode",
         icon="mdi:access-point-network",
         value_fn=lambda data: data.get("mode"),
+        entity_category=EntityCategory.DIAGNOSTIC,
     ),
     KunpengCpeSensorEntityDescription(
         key="isp",
         translation_key="isp",
         icon="mdi:sim",
         value_fn=lambda data: data.get("isp"),
+        entity_category=EntityCategory.DIAGNOSTIC,
     ),
     # ---- 终端与运行时长 ----
     KunpengCpeSensorEntityDescription(
