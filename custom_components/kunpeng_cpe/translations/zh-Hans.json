@@ -21,7 +21,6 @@
       "sensor": {
         "device_temp": { "name": "设备温度" },
         "module_temp": { "name": "5G模组温度" },
-        "wifi_temp": { "name": "WiFi温度" },
         "cpu_usage": { "name": "CPU使用率" },
         "memory_usage": { "name": "内存使用率" },
         "rsrp": { "name": "RSRP参考信号接收功率" },

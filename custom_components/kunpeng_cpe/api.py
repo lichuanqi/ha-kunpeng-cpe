@@ -157,7 +157,6 @@ class KunpengCpeApi:
 
         # ---- 温度 ----
         data["device_temp"] = _to_float(global_info.get("device_temp"))
-        data["wifi_temp"] = _to_float(global_info.get("wifi_temp"))
         data["module_temp"] = _to_float(cpe.get("model_temp"))
 
         # ---- 资源占用 ----

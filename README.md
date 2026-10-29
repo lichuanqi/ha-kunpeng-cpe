@@ -2,7 +2,7 @@
 
 ![Home Assistant](https://img.shields.io/badge/Home_Assistant-Integration-41BDF5?logo=homeassistant&logoColor=white)
 ![Device](https://img.shields.io/badge/Device-Kunpeng_C2000--518-orange)
-![Sensors](https://img.shields.io/badge/Sensors-15-brightgreen)
+![Sensors](https://img.shields.io/badge/Sensors-14-brightgreen)
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-41BDF5.svg)](https://github.com/hacs/integration)
 
 把鲲鹏5G CPE接入Home Assistant，读取蜂窝信号、设备状态等数据。
@@ -17,8 +17,7 @@
 | # | 实体名称 | translation_key | 单位 | Device Class | 示例值 |
 |---|---|---|---|---|---|
 | 1 | 设备温度 | `device_temp` | °C | `temperature` | `41` |
-| 2 | 5G 模组温度 | `module_temp` | °C | `temperature` | `42` |
-| 3 | WiFi 温度 | `wifi_temp` | °C | `temperature` | `41` |
+| 2 | 5G模组温度 | `module_temp` | °C | `temperature` | `42` |
 | 4 | CPU 使用率 | `cpu_usage` | % | — | `1` |
 | 5 | 内存使用率 | `memory_usage` | % | — | `63` |
 | 6 | RSRP 参考信号接收功率 | `rsrp` | dBm | `signal_strength` | `-74` |

@@ -83,6 +83,7 @@ SENSORS: tuple[KunpengCpeSensorEntityDescription, ...] = (
         device_class=SensorDeviceClass.TEMPERATURE,
         state_class=SensorStateClass.MEASUREMENT,
         icon="mdi:thermometer-low",
+        entity_registry_enabled_default=False,
         value_fn=lambda data: _as_float(data.get("wifi_temp")),
     ),
     # ---- 资源占用 ----
